@@ -1,6 +1,6 @@
-# clock_app
+# flutter-clock-app-demo
 
-A new Flutter application.
+Demo of flutter using custom paint widgets and showcasing an API call - slightly less modest "hello world"
 
 ## Getting Started
 
