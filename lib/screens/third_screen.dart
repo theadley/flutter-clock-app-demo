@@ -36,7 +36,7 @@ class Post {
 
 class ThirdTab extends StatelessWidget {
   final Future<Post> post;
-  List<Item> _data;
+  final List<Item> _data = [];
 
   ThirdTab({Key key, this.post}) : super(key: key);
 
@@ -47,12 +47,12 @@ class ThirdTab extends StatelessWidget {
       builder: (context, snapshot) {
         if (snapshot.hasData) {
 //          return Text(snapshot.data.title);
-          _data = List.generate(2, (int index) {
+          _data.addAll(List.generate(2, (int index) {
             return Item(
               headerValue: 'Panel $index: ${snapshot.data.title}',
               expandedValue: snapshot.data.body,
             );
-          });
+          }));
 
           return ListView(
             children: <Widget>[
