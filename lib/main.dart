@@ -26,19 +26,7 @@ class MyApp extends StatelessWidget {
 class AppClock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-//    return new Scaffold(
-//      body: new Padding(
-//        padding: const EdgeInsets.only(left: 10.0, right: 10.0),
-//        child: new Column(
-//          mainAxisAlignment: MainAxisAlignment.center,
-//          children: <Widget>[
-//
-//            new Clock(
-//            ),
-//          ],
-//        ),
-//      ),
-//    );
+
     return Container(
       height: 600,
       width: double.infinity,
@@ -108,7 +96,7 @@ class AppClock extends StatelessWidget {
               child: SecondTab(),
             ),
             Center(
-              child: ThirdTab(post: fetchPost()),
+//              child: ThirdTab(post: fetchPost()),
             ),
           ]),
           bottomNavigationBar: BottomBar(),
